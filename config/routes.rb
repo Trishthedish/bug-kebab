@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'beetle/index'
 
-  get 'beetle/new'
+  get 'beetle/new' => 'beetle#new', as: 'beetles'
 
   get 'beetle/create'
 
@@ -13,19 +13,19 @@ Rails.application.routes.draw do
 
   get 'beetle/update'
 
-  get 'beattle/index'
-
-  get 'beattle/new'
-
-  get 'beattle/show'
-
-  get 'beattle/new'
-
-  get 'beattle/create'
-
-  get 'beattle/destroy'
-
-  get 'beattle/edit'
+  # get 'beattle/index'
+  #
+  # get 'beattle/new'
+  #
+  # get 'beattle/show'
+  #
+  # get 'beattle/new' => 'beetle#new', as: 'new'
+  #
+  # get 'beattle/create'
+  #
+  # get 'beattle/destroy'
+  #
+  # get 'beattle/edit'
 
   get 'beattle/update'
 
